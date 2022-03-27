@@ -25,10 +25,6 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-html = ""
-with open('index.html', 'r') as f:
-    html = f.read()
-
 @app.get("/")
 async def get():
     # print("Hiiiiii")
